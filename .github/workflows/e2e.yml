@@ -18,8 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # In case this is run on a runner without nix
-      # - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/nix-installer-action@v16
       - uses: DeterminateSystems/magic-nix-cache-action@v2
 
       # Caching
